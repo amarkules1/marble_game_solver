@@ -18,3 +18,11 @@ def test_is_marble_at_position_ob():
 
     assert not target.is_marble_at_position((0, 0))
 
+
+def test_get_possible_moves():
+    target = Game()
+
+    actual = target.get_possible_moves()
+
+    assert len(actual) == 4
+

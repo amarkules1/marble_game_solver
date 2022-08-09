@@ -6,10 +6,6 @@ def is_distance_2_apart(source, dest):
     return False
 
 
-def is_in_bounds(pos):
-    return 0 <= pos[0] < 9 and 0 <= pos[1] < 9
-
-
 def get_middle_position(source, dest):
     return (source[0] + dest[0]) // 2, (source[1] + dest[1]) // 2
 
@@ -33,12 +29,12 @@ class Game:
         self.board.append([2, 2, 2, 1, 1, 1, 2, 2, 2])
 
     def is_marble_at_position(self, pos):
-        return is_in_bounds(pos) and self.board[pos[0]][pos[1]] == 1
+        return self.is_in_bounds(pos) and self.board[pos[0]][pos[1]] == 1
 
     def is_valid_move(self, source, dest):
-        if not is_in_bounds(source):
+        if not self.is_in_bounds(source):
             return False
-        if not is_in_bounds(dest):
+        if not self.is_in_bounds(dest):
             return False
         if not self.is_marble_at_position(source):
             return False
@@ -62,11 +58,17 @@ class Game:
             return True
         return False
 
+    def is_in_bounds(self, pos):
+        if 0 <= pos[0] < 9 and 0 <= pos[1] < 9:
+            return self.board[pos[0]][pos[1]] != 2
+        return False
+
+
     def get_possible_moves(self):
         pos_moves = list()
         for i in range(0, 9):
             for j in range(0, 9):
-                if not self.is_marble_at_position((i, j)):
+                if self.is_in_bounds((i, j)) and not self.is_marble_at_position((i, j)):
                     if self.is_marble_at_position((i, j - 1)) and self.is_marble_at_position((i, j - 2)):
                         pos_moves.append(((i, j - 2), (i, j)))
                     if self.is_marble_at_position((i, j + 1)) and self.is_marble_at_position((i, j + 2)):
