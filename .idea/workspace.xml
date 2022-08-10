@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8292c42c-2f4e-403f-89c7-bcd6042dc771" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/main/move_selectors.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_game.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solve.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/solve.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

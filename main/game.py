@@ -13,20 +13,18 @@ def get_middle_position(source, dest):
 class Game:
     moves: list
     board: list
-    remaining_marbles = 49
+    remaining_marbles = 36
 
     def __init__(self):
         self.moves = list()
         self.board = list()
-        self.board.append([2, 2, 2, 1, 1, 1, 2, 2, 2])
-        self.board.append([2, 2, 2, 1, 1, 1, 2, 2, 2])
-        self.board.append([2, 2, 1, 1, 1, 1, 1, 2, 2])
-        self.board.append([1, 1, 1, 1, 1, 1, 1, 1, 1])
-        self.board.append([1, 1, 1, 1, 0, 1, 1, 1, 1])
-        self.board.append([1, 1, 1, 1, 1, 1, 1, 1, 1])
-        self.board.append([2, 2, 1, 1, 1, 1, 1, 2, 2])
-        self.board.append([2, 2, 2, 1, 1, 1, 2, 2, 2])
-        self.board.append([2, 2, 2, 1, 1, 1, 2, 2, 2])
+        self.board.append([2, 2, 1, 1, 1, 2, 2])
+        self.board.append([2, 1, 1, 1, 1, 1, 2])
+        self.board.append([1, 1, 1, 1, 1, 1, 1])
+        self.board.append([1, 1, 1, 0, 1, 1, 1])
+        self.board.append([1, 1, 1, 1, 1, 1, 1])
+        self.board.append([2, 1, 1, 1, 1, 1, 2])
+        self.board.append([2, 2, 1, 1, 1, 2, 2])
 
     def is_marble_at_position(self, pos):
         return self.is_in_bounds(pos) and self.board[pos[0]][pos[1]] == 1
@@ -59,7 +57,7 @@ class Game:
         return False
 
     def is_in_bounds(self, pos):
-        if 0 <= pos[0] < 9 and 0 <= pos[1] < 9:
+        if 0 <= pos[0] < 7 and 0 <= pos[1] < 7:
             return self.board[pos[0]][pos[1]] != 2
         return False
 
