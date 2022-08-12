@@ -13,3 +13,20 @@ def follow_best_game(curr_game: Game, best_game: Game):
             return select_random_move(curr_game.get_possible_moves())
         return best_game.moves[len(curr_game.moves)]
     return select_random_move(curr_game.get_possible_moves())
+
+
+def dist_score(game:Game):
+    game_sum = 0
+    for i in range(0, 7):
+        for j in range(0, 7):
+            if game.board[i][j] == 1:
+                game_sum = game_sum + abs(3 - i)
+                game_sum = game_sum + abs(3 - j)
+    return game_sum
+
+
+def compare_games_center_proximity(game1: Game, game2: Game):
+    if dist_score(game1) < dist_score(game2):
+        return game1
+    return game2
+
