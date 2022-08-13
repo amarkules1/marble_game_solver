@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8292c42c-2f4e-403f-89c7-bcd6042dc771" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/test/test_move_selectors.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/move_selectors.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/move_selectors.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solve.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/solve.ipynb" afterDir="false" />
     </list>
@@ -31,21 +30,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/amarl/dev/python/marble_game_solver&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/dev/python_projects/marble_game_solver/test",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\dev\python_projects\marble_game_solver\test" />
       <recent name="C:\dev\python_projects\marble_game_solver\main" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_game.test_get_possible_moves">
+  <component name="RunManager" selected="Python tests.pytest for test_move_selectors.test_traverse_node">
     <configuration name="pytest for test_game.test_get_possible_moves" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="marble_game_solver" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -110,29 +109,29 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test.test_game.test_is_marble_at_position_true" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_move_selectors.test_traverse_node" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="marble_game_solver" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.test_game.test_is_marble_at_position_true&quot;" />
+      <option name="_new_target" value="&quot;test_move_selectors.test_traverse_node&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for test_move_selectors.test_traverse_node" />
         <item itemvalue="Python tests.pytest for test_game.test_get_possible_moves" />
         <item itemvalue="Python tests.pytest for test_game.test_is_marble_at_position_true" />
         <item itemvalue="Python tests.pytest for test_game.test_is_marble_at_position_ob" />
         <item itemvalue="Python tests.pytest for test_game.test_is_marble_at_position_no_marble" />
-        <item itemvalue="Python tests.pytest for test.test_game.test_is_marble_at_position_true" />
       </list>
     </recent_temporary>
   </component>
@@ -170,6 +169,16 @@
           <url>file://$PROJECT_DIR$/test/test_game.py</url>
           <line>24</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test/test_move_selectors.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main/move_selectors.py</url>
+          <line>51</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
