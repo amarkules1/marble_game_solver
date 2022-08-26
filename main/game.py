@@ -1,3 +1,4 @@
+
 def is_distance_2_apart(source, dest):
     if source[0] == dest[0]:
         return abs(source[1] - dest[1]) == 2
@@ -77,3 +78,28 @@ class Game:
                         pos_moves.append(((i + 2, j), (i, j)))
 
         return pos_moves
+
+    def __eq__(self, other):
+        return self.moves == other.moves
+
+    def to_dict(self):
+        return {
+            'score': self.dist_score(),
+            'remaining_marbles': self.remaining_marbles,
+            'moves': self.moves
+        }
+
+    def dist_score(self):
+        game_sum = 0
+        for i in range(0, 7):
+            for j in range(0, 7):
+                if self.board[i][j] == 1:
+                    game_sum = game_sum + abs(3 - i)
+                    game_sum = game_sum + abs(3 - j)
+        return game_sum
+
+    def __hash__(self):
+        return hash(str(self.moves))
+
+    def is_finished(self):
+        return len(self.get_possible_moves()) == 0
